@@ -18,16 +18,16 @@ Share the story behind the baking and build connection with followers.
 ## Key features and functionality:
 
 Navigation bar on every page for easy access to all sections (Home, About, Menu, Gallery, Contact).
-	•	Consistent logo placement to maintain brand identity.
-	•	Clear headings and subheadings to organise content on each page.
-	•	Text and images combined to showcase products and create an engaging experience.
-	•	Structured page layout with sections such as introduction, content, and footer.
-	•	Internal links that connect all pages for smooth navigation.
-	•	External link (email link) for customer inquiries.
-	•	Embedded Google Map on the Contact page to show location.
-	•	Trading hours information for customer reference.
-	•	Product information with prices and descriptions on the Menu page.
-	•	Image gallery to highlight baked goods and the lifestyle of the bakery.
+•	Consistent logo placement to maintain brand identity.
+•	Clear headings and subheadings to organise content on each page.
+•	Text and images combined to showcase products and create an engaging experience.
+•	Structured page layout with sections such as introduction, content, and footer.
+•	Internal links that connect all pages for smooth navigation.
+•	External link (email link) for customer inquiries.
+•	Embedded Google Map on the Contact page to show location.
+•	Trading hours information for customer reference.
+•	Product information with prices and descriptions on the Menu page.
+•	Image gallery to highlight baked goods and the lifestyle of the bakery.
 
 ## Timeline:
 • Week 1–2: Research and branding.
@@ -48,22 +48,22 @@ Navigation bar on every page for easy access to all sections (Home, About, Menu,
 
 ## Changelog: Part 1 poe 
 22 August 2025 – Day 1
-	•	Created the initial sitemap to plan website structure and navigation flow.
+•	Created the initial sitemap to plan website structure and navigation flow.
 
 23 August 2025 – Day 2
-	•	Built the Homepage with a header, navigation menu, welcome text, and featured bakery items.
+•	Built the Homepage with a header, navigation menu, welcome text, and featured bakery items.
 
 24 August 2025 – Day 3
-	•	Developed the About Us page.
-	•	Added sections for Our Story, Mission, Vision, and Why Choose Us.
-	•	Inserted two images showcasing the restaurant’s vibe.
+•	Developed the About Us page.
+•	Added sections for Our Story, Mission, Vision, and Why Choose Us.
+•	Inserted two images showcasing the restaurant’s vibe.
 
 25 August 2025 – Day 4
-	•	Completed the Menu page.
-	•	Added a list of products with prices and short descriptions.
+•	Completed the Menu page.
+•	Added a list of products with prices and short descriptions.
 
 26 August 2025 – Day 5
-	•	Created the Gallery page with images of baked goods and bakery lifestyle photos.
+•	Created the Gallery page with images of baked goods and bakery lifestyle photos.
  ## PART 2 POE changelog 
 25 September 2025 
 ### Index pages changes:
