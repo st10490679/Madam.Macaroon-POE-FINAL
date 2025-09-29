@@ -1,0 +1,250 @@
+/* === CSS Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Root Variables === */
+:root {
+    --blush-pink: #e07a8c;      /* darker pink for contrast */
+    --cream: #fff9f4;
+    --lavender: #e6e0f8;
+    --muted-gold: #d4af37;
+    --text-color: #333;
+}
+
+/* === Global Styles === */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--cream);
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--blush-pink);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--muted-gold);
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* === Header === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--cream);
+    border-bottom: 1px solid var(--blush-pink);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header img {
+    max-height: 120px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    font-weight: 600;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--muted-gold);
+}
+
+/* Small “Order Now” button */
+.btn-order-small {
+    background-color: var(--muted-gold);
+    color: var(--cream);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-order-small:hover {
+    background-color: #c49e2f;
+}
+
+/* === Main Content === */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+main section {
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+section h3 {
+    margin: 0.5rem 0;
+}
+section p {
+    margin-bottom: 0.5rem;
+}
+
+/* === Product / Gallery Articles === */
+section article {
+    background-color: var(--lavender);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* Images inside product/gallery sections */
+section article picture,
+section article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 1rem;
+
+    /* --- Hover Zoom --- */
+    transition: transform 0.3s ease;
+}
+section article picture:hover img,
+section article img:hover {
+    transform: scale(1.05);
+}
+
+/* === About Page Layout === */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* override main’s center */
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* === Footer === */
+footer {
+    background-color: var(--lavender);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+footer a {
+    color: var(--muted-gold);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* === Responsive Breakpoints === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px 15px;
+        gap: 40px;
+    }
+
+    section article {
+        max-width: 100%;
+    }
+
+    /* Stack About page vertically on tablets */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        order: 1;
+    }
+    .about-image {
+        order: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-height: 80px;
+    }
+
+    .btn-order-small {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    main {
+        gap: 30px;
+    }
+}
+.btn {
+  display:inline-block;
+  background:#e06a8b;     /* macaron pink */
+  color:#fff;
+  padding:12px 24px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:background 0.3s ease;
+}
+.btn:hover {
+  background:#c94d71;
+}
+
+.order-section {
+  text-align:center;
+  margin:40px 0;
+}
