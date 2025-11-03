@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madam Macaroon - Contact Page</title>
-    <meta name="description" content="Contact Madam Macaroon - get in touch for orders, feedback, or special requests. Visit our Johannesburg bakery or reach us online.">
+    <title>Madam Macaroon - Contact Us</title>
+    <meta name="description" content="Contact Madam Macaroon in Johannesburg for handmade French-inspired desserts, macarons, éclairs, and custom orders.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-    
+
     <!-- Header -->
     <header>
-        <div>
-            <a href="index.html">
-                <img src="_image/logo clear.png" alt="Madam Macaroon Logo" width="120">
-            </a>
-        </div>
-
+        <a href="index.html">
+            <img src="_image/logo clear.png" alt="Madam Macaroon Logo" width="120" loading="lazy">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,35 +31,34 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <h1>Get in Touch with Us</h1>
         <p>We love hearing from our customers! Whether you have questions, feedback, or want to place a special order, feel free to reach out.</p>
 
-        <section>
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:info@madammacaroon.co.za">info@madammacaroon.co.za</a></p>
-            <p>Phone: +27 71 234 5676</p>
-            <p>Location: 7 Federal Avenue, Johannesburg, South Africa</p>
+        <section class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:info@madammacaroon.co.za">info@madammacaroon.co.za</a></p>
+            <p><strong>Phone:</strong> +27 71 234 5676</p>
+            <p><strong>Location:</strong> 7 Federal Avenue, Johannesburg, South Africa</p>
         </section>
 
-        <section>
+        <section class="trading-hours">
             <h2>Trading Hours</h2>
             <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
             <p>Saturday: 10:00 AM - 4:00 PM</p>
             <p>Sunday: Closed</p>
         </section>
 
+        <!-- Interactive Map -->
         <section>
             <h2>Find Us</h2>
-            <p>Use the map below to locate our shop. We're always happy to welcome visitors who want to see our freshly baked treats in person!</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.491439113192!2d28.04365587487012!3d-26.115514860366854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950ccbc07d4149%3A0x89e63449bc6a2db9!2s7%20Federal%20Ave%2C%20Sandhurst%2C%20Sandton%2C%202196!5e0!3m2!1sen!2sza!4v1756211360076!5m2!1sen!2sza"></iframe>
+            <p>Use the interactive map below to locate our shop!</p>
+            <div id="map" style="height: 400px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"></div>
         </section>
 
+        <!-- Contact Form -->
         <section>
-            <h2>Send us a message</h2>
-            <p>If you'd like to get in touch quickly, fill out the form below and we'll get back to you as soon as possible.</p>
-            
+            <h2>Send Us a Message</h2>
+            <p>If you'd like to get in touch quickly, fill out the form below and we'll respond as soon as possible.</p>
             <form action="#" method="post">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
@@ -68,12 +70,16 @@
                 <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
                 <button type="submit">Send Message</button>
+                <p class="form-response"></p>
             </form>
         </section>
 
         <section>
             <h2>Follow Us</h2>
-            <p>Follow us on social media for updates, special treats, and seasonal flavours!</p>
+            <p>Stay up-to-date with our latest creations and seasonal specials on social media!</p>
+            <p>
+                <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </p>
         </section>
     </main>
 
@@ -86,6 +92,23 @@
         </p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    
+    <script>
+        // Initialize Leaflet map
+        var map = L.map('map').setView([-26.1155, 28.0437], 15);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add marker with popup
+        L.marker([-26.1155, 28.0437]).addTo(map)
+            .bindPopup('<b>Madam Macaroon</b><br>7 Federal Avenue, Johannesburg')
+            .openPopup();
+    </script>
 </body>
 </html>
