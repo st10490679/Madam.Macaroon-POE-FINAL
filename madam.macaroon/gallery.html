@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madam Macaroon - Gallery</title>
-    <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Madam Macaroon Gallery - Explore our pastries, macarons, eclairs, and desserts in elegant Parisian style.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- ===== HEADER ===== -->
     <header>
         <a href="index.html">
             <img src="_image/logo clear.png" alt="Madam Macaroon Logo" width="120">
@@ -17,20 +17,20 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="products.html">Menu</a></li>
-                <li>Gallery</li>
+                <li class="active">Gallery</li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- ===== MAIN CONTENT ===== -->
     <main>
         <h1>Our Gallery</h1>
         <p>Take a look at some of our favourite creations, freshly baked with love and inspired by Parisian elegance. From éclairs to macarons, each treat reflects our passion for quality and creativity.</p>
 
-        <!-- Gallery Grid -->
+        <!-- ===== GALLERY GRID ===== -->
         <section class="gallery-grid">
             <img src="_image/bakingprocess.jpg" alt="Baking process">
             <img src="_image/Berry eclair for gallery.jpg" alt="Berry Eclair">
@@ -46,25 +46,32 @@
             <img src="_image/download (1).jpg" alt="Whisk and Baking Tools">
         </section>
 
-        <!-- ===== Order Button Section ===== -->
+        <!-- ===== LIGHTBOX POPUP ===== -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" alt="Expanded view">
+        </div>
+
+        <!-- ===== ORDER SECTION ===== -->
         <section class="order-section">
             <h2>Ready to Taste the Magic?</h2>
             <p>Place your order and treat yourself to a touch of Paris.</p>
             <a href="contact.html" class="btn">Order Now</a>
         </section>
-        <!-- ===== End Order Button ===== -->
 
-        <!-- Additional Sections -->
+        <!-- ===== BEHIND THE SCENES ===== -->
         <section>
             <h2>Behind the Scenes</h2>
             <p>Every dessert starts with careful preparation and dedication. Our bakers craft each creation with precision, from hand-whipped creams to perfectly baked pastries. These moments behind the scenes highlight our love for the art of baking.</p>
         </section>
 
+        <!-- ===== INSPIRATION ===== -->
         <section>
             <h2>Our Inspiration</h2>
             <p>Madam Macaroon is inspired by Parisian elegance, blending classic French patisserie techniques with modern flair. Each dessert is designed to delight the senses and bring a touch of sophistication to every bite.</p>
         </section>
 
+        <!-- ===== VISIT US ===== -->
         <section>
             <h2>Visit Us</h2>
             <p>
@@ -81,7 +88,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <p>&copy; 2025 Madam Macaroon - 7 Federal Avenue, Johannesburg, South Africa</p>
         <p>
@@ -90,5 +97,7 @@
         </p>
     </footer>
 
+    <!-- ===== SCRIPT ===== -->
+    <script src="script.js"></script>
 </body>
 </html>

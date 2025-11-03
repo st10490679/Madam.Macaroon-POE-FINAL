@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madam Macaroon - Home</title>
-    <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Madam Macaroon - Handcrafted French-inspired desserts in Johannesburg. Explore our éclairs, macarons, pastries, and order online or visit us today.">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="macarons, eclairs, pastries, French desserts, Johannesburg bakery, Madam Macaroon">
 </head>
+
 <body>
-    
     <!-- Header -->
     <header>
-        <a href="index.html">
-            <img src="_image/logo clear.png" alt="Madam Macaroon Logo" width="140">
+        <a href="index.html" aria-label="Madam Macaroon Home">
+            <img src="_image/logo clear.png" alt="Madam Macaroon logo" width="140">
         </a>
 
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li>Home</li>
+                <li><strong>Home</strong></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="products.html">Menu</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -30,7 +35,6 @@
 
     <!-- Main Content -->
     <main>
-        
         <section>
             <h1>Welcome to Madam Macaroon</h1>
             <p>
@@ -49,7 +53,7 @@
             </p>
             <p>
                 Our mission is simple: to share the beauty of French desserts with local flavour. 
-                We believe baking is more than food—it's an experience meant to delight your senses.
+                We believe baking is more than food — it's an experience meant to delight your senses.
             </p>
         </section>
 
@@ -57,21 +61,33 @@
             <h2>Featured Creations</h2>
             <p>From classic favourites to seasonal specials, every creation is crafted with love.</p>
 
-            <!-- Featured Creations with simple img tags -->
+            <!-- Featured Items -->
             <article>
-                <img src="_image/eclairs genral.jpg" alt="Freshly baked eclairs" width="400">
-                <h3>Eclairs</h3>
+                <picture>
+                    <source srcset="_image/eclairs genral-small.jpg" media="(max-width: 600px)">
+                    <source srcset="_image/eclairs genral-medium.jpg" media="(max-width: 1000px)">
+                    <img src="_image/eclairs genral.jpg" alt="Freshly baked chocolate and cream éclairs" loading="lazy" width="400">
+                </picture>
+                <h3>Éclairs</h3>
                 <p>Strawberry and cream, chocolate-glazed, and more — crisp and tasty éclairs baked fresh daily.</p>
             </article>
 
             <article>
-                <img src="_image/macaroons general.jpg" alt="Assorted colourful macaroons" width="400">
-                <h3>Macaroons</h3>
+                <picture>
+                    <source srcset="_image/macaroons general-small.jpg" media="(max-width: 600px)">
+                    <source srcset="_image/macaroons general-medium.jpg" media="(max-width: 1000px)">
+                    <img src="_image/macaroons general.jpg" alt="Assorted colourful macarons" loading="lazy" width="400">
+                </picture>
+                <h3>Macarons</h3>
                 <p>Colourful, chewy, and handmade macarons in classic and seasonal flavours. Perfect for gifting!</p>
             </article>
 
             <article>
-                <img src="_image/pastries general.jpg" alt="Flaky buttery pastries" width="400">
+                <picture>
+                    <source srcset="_image/pastries general-small.jpg" media="(max-width: 600px)">
+                    <source srcset="_image/pastries general-medium.jpg" media="(max-width: 1000px)">
+                    <img src="_image/pastries general.jpg" alt="Flaky buttery pastries and croissants" loading="lazy" width="400">
+                </picture>
                 <h3>Pastries</h3>
                 <p>Buttery, flaky pastries and croissants made with care using traditional techniques.</p>
             </article>
@@ -80,10 +96,12 @@
         <section>
             <h2>What Our Customers Say</h2>
             <blockquote>
-                "Madam Macaroon's macarons are absolutely divine! Each bite feels like a little piece of Paris." - Sarah M.
+                “Madam Macaroon's macarons are absolutely divine! Each bite feels like a little piece of Paris.” 
+                <cite>– Sarah M.</cite>
             </blockquote>
             <blockquote>
-                "I ordered éclairs for a birthday party and everyone loved them. Fresh, delicious, and beautiful!" - Thabo L.
+                “I ordered éclairs for a birthday party and everyone loved them. Fresh, delicious, and beautiful!” 
+                <cite>– Thabo L.</cite>
             </blockquote>
         </section>
 
@@ -100,23 +118,22 @@
 
         <section>
             <h2>Visit Us</h2>
-            <p>
-                <strong>Address:</strong> 7 Federal Avenue, Johannesburg, South Africa<br>
-                <strong>Phone:</strong> +27 71 234 5676<br>
-                <strong>Email:</strong> <a href="mailto:info@madammacaroon.co.za">info@madammacaroon.co.za</a>
-            </p>
-            <p>
-                <strong>Trading Hours:</strong><br>
-                Monday-Friday: 8:00 AM - 6:00 PM<br>
-                Saturday: 10:00 AM - 4:00 PM<br>
-                Sunday: Closed
-            </p>
+            <address>
+                <p><strong>Address:</strong> 7 Federal Avenue, Johannesburg, South Africa</p>
+                <p><strong>Phone:</strong> +27 71 234 5676</p>
+                <p><strong>Email:</strong> <a href="mailto:info@madammacaroon.co.za">info@madammacaroon.co.za</a></p>
+                <p><strong>Trading Hours:</strong><br>
+                    Monday–Friday: 8:00 AM – 6:00 PM<br>
+                    Saturday: 10:00 AM – 4:00 PM<br>
+                    Sunday: Closed
+                </p>
+            </address>
         </section>
 
         <section>
             <h2>Order Today</h2>
             <p>
-                Explore our full <a href="products.html">menu</a> or browse the <a href="gallery.html">gallery</a>.
+                Explore our full <a href="products.html">menu</a> or browse the <a href="gallery.html">gallery</a>. 
                 For custom orders, use the <a href="contact.html">contact page</a> or WhatsApp us for quick enquiries.
             </p>
         </section>
@@ -130,5 +147,8 @@
             <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
         </p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
