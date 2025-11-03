@@ -116,6 +116,37 @@ Added “Order Now” button to Gallery and Products pages
 Adjusted hover animations so images scale smoothly on all devices
 Updated README with responsive screenshots.
 
+Part 3 Changelog
+
+2 November 2025
+•Improved overall responsiveness: refined media queries for mobile, tablet, and desktop.
+
+•Enhanced layout and spacing for better balance across all pages.
+
+•Adjusted navigation bar with consistent hover animations and color transitions.
+
+•Ensured images across all pages scale smoothly using object-fit and responsive max-widths.
+
+•Applied fluid typography using relative units (em, rem) for text scaling on different devices.
+
+•Updated CSS for improved accessibility (contrast, font readability, spacing).
+
+•Added subtle fade-in animations on hero text and images for better visual engagement.
+
+•Tested all pages for responsiveness using Chrome DevTools.
+
+•Updated README changelog and references.
+
+3 November 2025
+
+•Verified navigation links, internal anchors, and external links.
+
+•Confirmed SEO tags (<meta> description, keywords, and alt text for all images).
+
+•Validated all HTML files to ensure proper structure (<header>, <main>, <footer>).
+
+•Reviewed overall CSS consistency (colors, fonts, and spacing).
+
 ## Testing Process Images 
 <img src="_private/tablet mm.png"  alt= "tablet layout image"> 
 Tablet view 
@@ -144,11 +175,20 @@ Phone view
 
 •	Pinterest (n.d.) Images sourced from Pinterest. Available at: https://www.pintrest.com(Accesssed: 22 August 2025)
 
-MDN Web Docs, n.d. Responsive images. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+•MDN Web Docs, n.d. Responsive images. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
  [Accessed 23 Sep. 2025].
 
-MDN Web Docs, n.d. Using media queries. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+•MDN Web Docs, n.d. Using media queries. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
  [Accessed 26 Sep. 2025].
 
-CSS-Tricks, n.d. A Complete Guide to Flexbox. [online] Available at: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+•CSS-Tricks, n.d. A Complete Guide to Flexbox. [online] Available at: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
  [Accessed 27 Sep. 2025].
+
+• MDN Web Docs, n.d. Meta Tags for SEO. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+ [Accessed 2 Nov. 2025].
+
+•LeafletJS, n.d. Interactive Maps for Web. [online] Available at: https://leafletjs.com
+ [Accessed 2 Nov. 2025].
+
+•W3Schools, n.d. CSS Animations. [online] Available at: https://www.w3schools.com/css/css3_animations.asp
+ [Accessed 3 Nov. 2025].
